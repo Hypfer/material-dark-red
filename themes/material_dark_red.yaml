@@ -3,40 +3,52 @@
 # Material Dark Red Theme
 #
 material_dark_red:
-  card-background-color: "var(--paper-card-background-color)"
-  dark-primary-color: "#c66900"
+  # Core Colors
+  primary-background-color: "#272822"
+  secondary-background-color: "#131313"
+  card-background-color: "#333333"
+  clear-background-color: "var(--secondary-background-color)"
+  primary-text-color: "#cfcfcf"
+  secondary-text-color: "var(--primary-color)"
+  text-primary-color: "#ffffff"
   disabled-text-color: "#545454"
   divider-color: "#333333"
-  light-primary-color: "#e06c6c"
-  paper-card-background-color: "#333333"
-  paper-card-header-color: "var(--paper-item-icon-color)"
-  paper-grey-200: "#191919"
-  paper-grey-50: "var(--primary-text-color)"
-  paper-item-icon-active-color: "var(--primary-color)"
-  paper-item-icon-color: "#d3d3d3"
-  paper-item-icon_-_color: "var(--paper-item-icon-color)"
-  paper-listbox-background-color: "var(--paper-card-background-color)"
-  paper-listbox-color: "var(--primary-text-color)"
-  paper-slider-active-color: "var(--primary-color)"
-  paper-slider-knob-color: "var(--primary-color)"
-  paper-slider-knob-start-color: "var(--primary-color)"
-  paper-slider-pin-color: "var(--primary-color)"
-  paper-slider-secondary-color: "var(--light-primary-color)"
-  paper-toggle-button-checked-bar-color: "var(--light-primary-color)"
-  paper-toggle-button-checked-button-color: "var(--primary-color)"
-  paper-toggle-button-checked-ink-color: "var(--dark-primary-color)"
-  paper-toggle-button-unchecked-bar-color: "var(--primary-text-color)"
-  primary-background-color: "#272822"
-  primary-color: "#d32f2f"
-  primary-text-color: "#cfcfcf"
-  secondary-background-color: "#131313"
-  secondary-text-color: "var(--primary-color)"
-  sidebar-background-color: "#333333"
-  sidebar-icon-color: "var(--paper-item-icon-color)"
-  sidebar-text_-_background: "#333333"
-  table-row-alternative-background-color: "var(--sidebar-text_-_background)"
-  table-row-background-color: "var(--paper-card-background-color)"
+  scrollbar-thumb-color: "var(--disabled-text-color)"
 
+  # Primary & Accent
+  primary-color: "#d32f2f"
+  dark-primary-color: "#c66900"
+  light-primary-color: "#e06c6c"
+  accent-color: "#ff9800"
+
+  # App Header
+  app-header-text-color: "var(--text-primary-color)"
+  app-header-background-color: "var(--primary-color)"
+
+  # Sidebar
+  sidebar-background-color: "#333333"
+  sidebar-icon-color: "var(--state-icon-color)"
+  sidebar-text_-_background: "#333333" # Custom variable
+
+  # State & Icons
+  state-icon-color: "#d3d3d3"
+
+  # Table
+  table-row-alternative-background-color: "var(--sidebar-text_-_background)"
+  table-row-background-color: "var(--card-background-color)"
+
+  # Switches (Toggles)
+  switch-checked-track-color: "var(--light-primary-color)"
+  switch-unchecked-track-color: "var(--primary-text-color)"
+  switch-unchecked-button-color: "#999999"
+
+  # Outlines & Interactions
+  outline-color: "rgba(225, 225, 255, 0.12)"
+  outline-hover-color: "rgba(225, 225, 255, 0.24)"
+  mdc-ripple-color: "#aaaaaa"
+  mdc-linear-progress-buffer-color: "rgba(255, 255, 255, 0.1)"
+
+  # Input variables
   input-idle-line-color: "rgba(255, 255, 255, 0.42)"
   input-hover-line-color: "rgba(255, 255, 255, 0.87)"
   input-disabled-line-color: "rgba(255, 255, 255, 0.06)"
@@ -50,6 +62,7 @@ material_dark_red:
   input-disabled-ink-color: "rgba(255, 255, 255, 0.37)"
   input-dropdown-icon-color: "rgba(255, 255, 255, 0.54)"
 
+  # Codemirror variables
   codemirror-keyword: "#C792EA"
   codemirror-operator: "#89DDFF"
   codemirror-variable: "#f07178"
@@ -68,6 +81,8 @@ material_dark_red:
   codemirror-property: "#C792EA"
   codemirror-qualifier: "#DECB6B"
   codemirror-type: "#DECB6B"
+
+  # Other standard variables
   energy-grid-return-color: "#a280db"
   map-filter: "invert(.9) hue-rotate(170deg) brightness(1.5) contrast(1.2) saturate(.3)"
   disabled-color: "#464646"
