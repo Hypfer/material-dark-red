@@ -19,12 +19,18 @@ material_dark_red:
       primary-color: "#d32f2f"
       accent-color: "#ff9800"
 
+      # --- Missing RGB Variables (Fixes transparent chips & overlays) ---
+      rgb-primary-color: "211, 47, 47"
+      rgb-accent-color: "255, 152, 0"
+      rgb-primary-text-color: "207, 207, 207"
+      rgb-secondary-text-color: "211, 47, 47"
+      rgb-text-primary-color: "255, 255, 255"
+      rgb-card-background-color: "51, 51, 51"
+
       # --- New Global Theme Variables (2025.08+) ---
       ha-button-border-radius: "var(--ha-card-border-radius)"
 
       # --- NEW: Core Token Palettes for Semantic System ---
-
-      # Primary Palette (Red)
       ha-color-primary-05: '#210707'
       ha-color-primary-10: '#420e0e'
       ha-color-primary-20: '#6b1818'
@@ -37,7 +43,6 @@ material_dark_red:
       ha-color-primary-90: '#f9d8d8'
       ha-color-primary-95: '#fcecec'
 
-      # Danger Palette (Pink) - For distinct destructive actions
       ha-color-red-05: '#33001c'
       ha-color-red-10: '#660038'
       ha-color-red-20: '#990055'
@@ -50,7 +55,6 @@ material_dark_red:
       ha-color-red-90: '#ffe5f3'
       ha-color-red-95: '#fff2f9'
 
-      # Warning Palette (Orange) - Based on your original accent-color
       ha-color-orange-05: '#331f00'
       ha-color-orange-10: '#663d00'
       ha-color-orange-20: '#995c00'
@@ -63,7 +67,6 @@ material_dark_red:
       ha-color-orange-90: '#fff2e5'
       ha-color-orange-95: '#fff8f2'
 
-      # Success Palette (Green)
       ha-color-green-05: '#001a0a'
       ha-color-green-10: '#003314'
       ha-color-green-20: '#004d1f'
@@ -76,7 +79,6 @@ material_dark_red:
       ha-color-green-90: '#d9f6e3'
       ha-color-green-95: '#e6f9ed'
 
-      # Neutral Palette
       ha-color-neutral-00: '#000000'
       ha-color-neutral-05: '#131313'
       ha-color-neutral-10: '#272822'
@@ -90,6 +92,110 @@ material_dark_red:
       ha-color-neutral-90: '#e1e1e1'
       ha-color-neutral-95: '#f0f0f0'
 
+      # --- NEW: Semantic System Variables (Dark Mode Base) ---
+      ha-color-text-primary: "var(--white-color)"
+      ha-color-text-secondary: "var(--ha-color-neutral-80)"
+      ha-color-text-link: "var(--ha-color-primary-60)"
+      ha-color-border-normal: "var(--ha-color-primary-50)"
+      ha-color-border-neutral-quiet: "var(--ha-color-neutral-40)"
+      ha-color-border-neutral-normal: "var(--ha-color-neutral-50)"
+      ha-color-border-neutral-loud: "var(--ha-color-neutral-70)"
+      ha-color-border-danger-normal: "var(--ha-color-red-50)"
+      ha-color-border-danger-loud: "var(--ha-color-red-50)"
+      ha-color-border-warning-normal: "var(--ha-color-orange-50)"
+      ha-color-border-warning-loud: "var(--ha-color-orange-50)"
+      
+      ha-color-fill-primary-quiet-resting: "var(--ha-color-primary-05)"
+      ha-color-fill-primary-quiet-hover: "var(--ha-color-primary-10)"
+      ha-color-fill-primary-quiet-active: "var(--ha-color-primary-05)"
+      ha-color-fill-primary-normal-resting: "var(--ha-color-primary-10)"
+      ha-color-fill-primary-normal-hover: "var(--ha-color-primary-20)"
+      ha-color-fill-primary-normal-active: "var(--ha-color-primary-10)"
+      ha-color-fill-primary-loud-resting: "var(--ha-color-primary-40)"
+      ha-color-fill-primary-loud-hover: "var(--ha-color-primary-30)"
+      ha-color-fill-primary-loud-active: "var(--ha-color-primary-40)"
+      
+      ha-color-fill-neutral-quiet-resting: "var(--ha-color-neutral-05)"
+      ha-color-fill-neutral-quiet-hover: "var(--ha-color-neutral-10)"
+      ha-color-fill-neutral-quiet-active: "var(--ha-color-neutral-00)"
+      ha-color-fill-neutral-normal-resting: "var(--ha-color-neutral-10)"
+      ha-color-fill-neutral-normal-hover: "var(--ha-color-neutral-20)"
+      ha-color-fill-neutral-normal-active: "var(--ha-color-neutral-10)"
+      ha-color-fill-disabled-quiet-resting: "var(--ha-color-neutral-10)"
+      ha-color-fill-disabled-normal-resting: "var(--ha-color-neutral-20)"
+      ha-color-fill-disabled-loud-resting: "var(--ha-color-neutral-30)"
+      
+      ha-color-fill-danger-quiet-resting: "var(--ha-color-red-05)"
+      ha-color-fill-danger-quiet-hover: "var(--ha-color-red-10)"
+      ha-color-fill-danger-quiet-active: "var(--ha-color-red-05)"
+      ha-color-fill-danger-normal-resting: "var(--ha-color-red-10)"
+      ha-color-fill-danger-normal-hover: "var(--ha-color-red-20)"
+      ha-color-fill-danger-normal-active: "var(--ha-color-red-10)"
+      ha-color-fill-danger-loud-resting: "var(--ha-color-red-40)"
+      ha-color-fill-danger-loud-hover: "var(--ha-color-red-30)"
+      ha-color-fill-danger-loud-active: "var(--ha-color-red-40)"
+      
+      ha-color-fill-warning-quiet-resting: "var(--ha-color-orange-05)"
+      ha-color-fill-warning-quiet-hover: "var(--ha-color-orange-10)"
+      ha-color-fill-warning-quiet-active: "var(--ha-color-orange-05)"
+      ha-color-fill-warning-normal-resting: "var(--ha-color-orange-10)"
+      ha-color-fill-warning-normal-hover: "var(--ha-color-orange-20)"
+      ha-color-fill-warning-normal-active: "var(--ha-color-orange-10)"
+      ha-color-fill-warning-loud-resting: "var(--ha-color-orange-40)"
+      ha-color-fill-warning-loud-hover: "var(--ha-color-orange-30)"
+      ha-color-fill-warning-loud-active: "var(--ha-color-orange-40)"
+      
+      ha-color-fill-success-quiet-resting: "var(--ha-color-green-05)"
+      ha-color-fill-success-quiet-hover: "var(--ha-color-green-10)"
+      ha-color-fill-success-quiet-active: "var(--ha-color-green-05)"
+      ha-color-fill-success-normal-resting: "var(--ha-color-green-10)"
+      ha-color-fill-success-normal-hover: "var(--ha-color-green-20)"
+      ha-color-fill-success-normal-active: "var(--ha-color-green-10)"
+      ha-color-fill-success-loud-resting: "var(--ha-color-green-40)"
+      ha-color-fill-success-loud-hover: "var(--ha-color-green-30)"
+      ha-color-fill-success-loud-active: "var(--ha-color-green-40)"
+      
+      ha-color-on-primary-quiet: "var(--ha-color-primary-70)"
+      ha-color-on-primary-normal: "var(--ha-color-primary-60)"
+      ha-color-on-neutral-quiet: "var(--ha-color-neutral-70)"
+      ha-color-on-neutral-normal: "var(--ha-color-neutral-60)"
+      ha-color-on-neutral-loud: "var(--white-color)"
+      ha-color-on-disabled-quiet: "var(--ha-color-neutral-40)"
+      ha-color-on-disabled-normal: "var(--ha-color-neutral-50)"
+      ha-color-on-disabled-loud: "var(--ha-color-neutral-50)"
+      ha-color-on-danger-quiet: "var(--ha-color-red-70)"
+      ha-color-on-danger-normal: "var(--ha-color-red-60)"
+      ha-color-on-danger-loud: "var(--white-color)"
+      ha-color-on-warning-quiet: "var(--ha-color-orange-70)"
+      ha-color-on-warning-normal: "var(--ha-color-orange-60)"
+      ha-color-on-warning-loud: "var(--white-color)"
+      ha-color-on-success-quiet: "var(--ha-color-green-70)"
+      ha-color-on-success-normal: "var(--ha-color-green-60)"
+      ha-color-on-success-loud: "var(--white-color)"
+
+      # --- NEW: Form & Surface Semantic Variables ---
+      ha-color-surface-default: "var(--secondary-background-color)"
+      ha-color-on-surface-default: "var(--primary-text-color)"
+      ha-color-form-background: "var(--input-fill-color)"
+      ha-color-form-background-hover: "rgba(255, 255, 255, 0.09)"
+      ha-color-form-background-disabled: "var(--input-disabled-fill-color)"
+      ha-color-text-disabled: "var(--disabled-text-color)"
+      ha-color-focus: "var(--primary-color)"
+      ha-dialog-surface-background: "var(--card-background-color)"
+      mdc-theme-surface: "var(--card-background-color)"
+
+      # --- NEW: WA (Web Components) Specific Overrides ---
+      wa-color-surface-raised: "var(--card-background-color)"
+      wa-color-surface-default: "var(--card-background-color)"
+      wa-color-surface-border: "var(--ha-color-border-neutral-quiet)"
+      wa-form-control-background-color: "var(--ha-color-form-background)"
+      wa-form-control-border-color: "var(--ha-color-border-neutral-quiet)"
+      wa-form-control-value-color: "var(--primary-text-color)"
+      wa-form-control-placeholder-color: "var(--secondary-text-color)"
+      wa-focus-ring-color: "var(--primary-color)"
+      wa-color-text-normal: "var(--primary-text-color)"
+      wa-color-text-quiet: "var(--secondary-text-color)"
+
       # --- Remaining Component-Specific Variables ---
       dark-primary-color: "#c66900"
       light-primary-color: "#e06c6c"
@@ -97,7 +203,7 @@ material_dark_red:
       app-header-background-color: "var(--primary-color)"
       sidebar-background-color: "#333333"
       sidebar-icon-color: "var(--state-icon-color)"
-      sidebar-text-background: "#333333" # Corrected
+      sidebar-text-background: "#333333"
       state-icon-color: "#d3d3d3"
       table-row-alternative-background-color: "var(--sidebar-text-background)"
       table-row-background-color: "var(--card-background-color)"
@@ -159,12 +265,18 @@ material_dark_red:
       primary-color: "#d32f2f"
       accent-color: "#ff9800"
 
+      # --- Missing RGB Variables (Fixes transparent chips & overlays) ---
+      rgb-primary-color: "211, 47, 47"
+      rgb-accent-color: "255, 152, 0"
+      rgb-primary-text-color: "207, 207, 207"
+      rgb-secondary-text-color: "211, 47, 47"
+      rgb-text-primary-color: "255, 255, 255"
+      rgb-card-background-color: "51, 51, 51"
+
       # --- New Global Theme Variables (2025.08+) ---
       ha-button-border-radius: "var(--ha-card-border-radius)"
 
       # --- NEW: Core Token Palettes for Semantic System ---
-
-      # Primary Palette (Red)
       ha-color-primary-05: '#210707'
       ha-color-primary-10: '#420e0e'
       ha-color-primary-20: '#6b1818'
@@ -177,7 +289,6 @@ material_dark_red:
       ha-color-primary-90: '#f9d8d8'
       ha-color-primary-95: '#fcecec'
 
-      # Danger Palette (Pink) - For distinct destructive actions
       ha-color-red-05: '#33001c'
       ha-color-red-10: '#660038'
       ha-color-red-20: '#990055'
@@ -190,7 +301,6 @@ material_dark_red:
       ha-color-red-90: '#ffe5f3'
       ha-color-red-95: '#fff2f9'
 
-      # Warning Palette (Orange) - Based on your original accent-color
       ha-color-orange-05: '#331f00'
       ha-color-orange-10: '#663d00'
       ha-color-orange-20: '#995c00'
@@ -203,7 +313,6 @@ material_dark_red:
       ha-color-orange-90: '#fff2e5'
       ha-color-orange-95: '#fff8f2'
 
-      # Success Palette (Green)
       ha-color-green-05: '#001a0a'
       ha-color-green-10: '#003314'
       ha-color-green-20: '#004d1f'
@@ -216,7 +325,6 @@ material_dark_red:
       ha-color-green-90: '#d9f6e3'
       ha-color-green-95: '#e6f9ed'
 
-      # Neutral Palette
       ha-color-neutral-00: '#000000'
       ha-color-neutral-05: '#131313'
       ha-color-neutral-10: '#272822'
@@ -242,12 +350,17 @@ material_dark_red:
       ha-color-border-danger-loud: "var(--ha-color-red-50)"
       ha-color-border-warning-normal: "var(--ha-color-orange-50)"
       ha-color-border-warning-loud: "var(--ha-color-orange-50)"
+      
       ha-color-fill-primary-quiet-resting: "var(--ha-color-primary-05)"
       ha-color-fill-primary-quiet-hover: "var(--ha-color-primary-10)"
       ha-color-fill-primary-quiet-active: "var(--ha-color-primary-05)"
       ha-color-fill-primary-normal-resting: "var(--ha-color-primary-10)"
       ha-color-fill-primary-normal-hover: "var(--ha-color-primary-20)"
       ha-color-fill-primary-normal-active: "var(--ha-color-primary-10)"
+      ha-color-fill-primary-loud-resting: "var(--ha-color-primary-40)"
+      ha-color-fill-primary-loud-hover: "var(--ha-color-primary-30)"
+      ha-color-fill-primary-loud-active: "var(--ha-color-primary-40)"
+      
       ha-color-fill-neutral-quiet-resting: "var(--ha-color-neutral-05)"
       ha-color-fill-neutral-quiet-hover: "var(--ha-color-neutral-10)"
       ha-color-fill-neutral-quiet-active: "var(--ha-color-neutral-00)"
@@ -257,6 +370,7 @@ material_dark_red:
       ha-color-fill-disabled-quiet-resting: "var(--ha-color-neutral-10)"
       ha-color-fill-disabled-normal-resting: "var(--ha-color-neutral-20)"
       ha-color-fill-disabled-loud-resting: "var(--ha-color-neutral-30)"
+      
       ha-color-fill-danger-quiet-resting: "var(--ha-color-red-05)"
       ha-color-fill-danger-quiet-hover: "var(--ha-color-red-10)"
       ha-color-fill-danger-quiet-active: "var(--ha-color-red-05)"
@@ -266,6 +380,7 @@ material_dark_red:
       ha-color-fill-danger-loud-resting: "var(--ha-color-red-40)"
       ha-color-fill-danger-loud-hover: "var(--ha-color-red-30)"
       ha-color-fill-danger-loud-active: "var(--ha-color-red-40)"
+      
       ha-color-fill-warning-quiet-resting: "var(--ha-color-orange-05)"
       ha-color-fill-warning-quiet-hover: "var(--ha-color-orange-10)"
       ha-color-fill-warning-quiet-active: "var(--ha-color-orange-05)"
@@ -275,6 +390,7 @@ material_dark_red:
       ha-color-fill-warning-loud-resting: "var(--ha-color-orange-40)"
       ha-color-fill-warning-loud-hover: "var(--ha-color-orange-30)"
       ha-color-fill-warning-loud-active: "var(--ha-color-orange-40)"
+      
       ha-color-fill-success-quiet-resting: "var(--ha-color-green-05)"
       ha-color-fill-success-quiet-hover: "var(--ha-color-green-10)"
       ha-color-fill-success-quiet-active: "var(--ha-color-green-05)"
@@ -284,6 +400,7 @@ material_dark_red:
       ha-color-fill-success-loud-resting: "var(--ha-color-green-40)"
       ha-color-fill-success-loud-hover: "var(--ha-color-green-30)"
       ha-color-fill-success-loud-active: "var(--ha-color-green-40)"
+      
       ha-color-on-primary-quiet: "var(--ha-color-primary-70)"
       ha-color-on-primary-normal: "var(--ha-color-primary-60)"
       ha-color-on-neutral-quiet: "var(--ha-color-neutral-70)"
@@ -302,6 +419,29 @@ material_dark_red:
       ha-color-on-success-normal: "var(--ha-color-green-60)"
       ha-color-on-success-loud: "var(--white-color)"
 
+      # --- NEW: Form & Surface Semantic Variables ---
+      ha-color-surface-default: "var(--secondary-background-color)"
+      ha-color-on-surface-default: "var(--primary-text-color)"
+      ha-color-form-background: "var(--input-fill-color)"
+      ha-color-form-background-hover: "rgba(255, 255, 255, 0.09)"
+      ha-color-form-background-disabled: "var(--input-disabled-fill-color)"
+      ha-color-text-disabled: "var(--disabled-text-color)"
+      ha-color-focus: "var(--primary-color)"
+      ha-dialog-surface-background: "var(--card-background-color)"
+      mdc-theme-surface: "var(--card-background-color)"
+
+      # --- NEW: WA (Web Components) Specific Overrides ---
+      wa-color-surface-raised: "var(--card-background-color)"
+      wa-color-surface-default: "var(--card-background-color)"
+      wa-color-surface-border: "var(--ha-color-border-neutral-quiet)"
+      wa-form-control-background-color: "var(--ha-color-form-background)"
+      wa-form-control-border-color: "var(--ha-color-border-neutral-quiet)"
+      wa-form-control-value-color: "var(--primary-text-color)"
+      wa-form-control-placeholder-color: "var(--secondary-text-color)"
+      wa-focus-ring-color: "var(--primary-color)"
+      wa-color-text-normal: "var(--primary-text-color)"
+      wa-color-text-quiet: "var(--secondary-text-color)"
+
       # --- Remaining Component-Specific Variables ---
       dark-primary-color: "#c66900"
       light-primary-color: "#e06c6c"
@@ -309,7 +449,7 @@ material_dark_red:
       app-header-background-color: "var(--primary-color)"
       sidebar-background-color: "#333333"
       sidebar-icon-color: "var(--state-icon-color)"
-      sidebar-text-background: "#333333" # Corrected
+      sidebar-text-background: "#333333"
       state-icon-color: "#d3d3d3"
       table-row-alternative-background-color: "var(--sidebar-text-background)"
       table-row-background-color: "var(--card-background-color)"
